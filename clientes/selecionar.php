@@ -1,10 +1,9 @@
 <?php
 include "../includes/cabecalho.php";
-include "../includes/menu.php";
 include "../includes/conexao.php";
 ?>
-<p>
-    <a href="novo.php">Adicionar Cliente</a>
+<p class="mt-3 ms-2">
+    <a href="novo.php"><button class="btn btn-outline-dark">Adicionar Cliente</button></a>
 </p>
 <h2>Listagem de Clientes</h2>
 <table class="table table-bordered">
