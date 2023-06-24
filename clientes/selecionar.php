@@ -9,15 +9,15 @@ include "../includes/conexao.php";
 <h2>Listagem de Clientes</h2>
 <table class="table table-bordered">
     <tr class="table text-center table-secondary table-striped-columns fw-semibold">
-        <td class="col-3">ID</td>
-        <td class="col-3">NOME</td>
-        <td class="col-3">CIDADE</td>
-        <td class="col-3">ESTADO</td>
-        <td class="col-3">PESO</td>
-        <td class="col-3">ALTURA</td>
-        <td class="col-3">DATA DE NASCIMENTO</td>
-        <td class="col-3">ULTIMA CONSULTA</td>
-        <td class="col-3">AÇÕES</td>
+        <td>ID</td>
+        <td>NOME</td>
+        <td>CIDADE</td>
+        <td>ESTADO</td>
+        <td>PESO</td>
+        <td>ALTURA</td>
+        <td>DATA DE NASCIMENTO</td>
+        <td>ULTIMA CONSULTA</td>
+        <td>AÇÕES</td>
     </tr>
 
 
@@ -35,12 +35,13 @@ include "../includes/conexao.php";
             <td><?php echo $um_cliente['altura']?></td>
             <td><?php echo $um_cliente['data_nascimento']?></td>
             <td><?php echo $um_cliente['data_ultima_consulta']?></td>
-            <td>
-                <a href="vizualizar.php?id=<?php echo $um_cliente['id']; ?>">Vizualizar
-                </a>
-                <a href="editar.php?id=<?php echo $um_cliente['id']; ?>">Editar
-                </a>
-                <a href="deletar.php?id=<?php echo $um_cliente['id']; ?>">Excluir</a>
+            <td class="text-center">
+                
+                <a href="vizualizar.php?id=<?php echo $um_cliente['id']; ?>"><button class="btn btn-link">Vizualizar</button></a>
+
+                <a href="editar.php?id=<?php echo $um_cliente['id']; ?>"><button class="btn btn-link">Editar</button></a>
+
+                <a href="deletar.php?id=<?php echo $um_cliente['id']; ?>"><button class="btn btn-link">Excluir</button></a>
             </td>
         </tr>
     <?php

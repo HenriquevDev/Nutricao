@@ -8,7 +8,7 @@
 </head>
 <body >
     <header>
-    <nav class="navbar bg-danger-subtle">
+    <nav class="navbar bg-success-subtle">
   <div class="container-fluid">
     <a class="navbar-brand" href="selecionar.php">
       <img src="../img/icone.png" alt="Logo" width="30" class="d-inline-block align-text-top">

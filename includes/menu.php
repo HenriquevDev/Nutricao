@@ -1,4 +1,4 @@
-<ul class="nav justify-content-center bg-danger bg-opacity-10">
+<ul class="nav justify-content-center bg-success bg-opacity-10">
   <li class="nav-item">
     <a class="nav-link" href="inserir.php?id=<?php echo $um_cliente['id'];?>">Inserir</a>
   </li>
