@@ -1,6 +1,5 @@
 <?php
 include "../includes/cabecalho.php";
-include "../includes/menu.php";
 ?>
 <h1 class="text-center">Novo Cliente</h1>
 
@@ -43,7 +42,7 @@ include "../includes/menu.php";
     </div>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <button class="btn btn-outline-success w-25" type="submit">Adicionar</button>
+            <a href="../clientes/inserir.php"><button class="btn btn-outline-success w-100" type="submit">Adicionar</button></a>
         </div>
     </div>
 </div>
