@@ -2,7 +2,13 @@
 include "../includes/conexao.php";
 $id = $_GET["id"];
 $nome = $_POST["nome"];
-$sql = "update t_cliente set nome = '$nome' where id = '$id'";
+$cidade = $_POST["cidade"];
+$estado = $_POST["estado"];
+$peso = $_POST["peso"];
+$altura = $_POST["altura"];
+$data_nascimento = $_POST["data_nascimento"];
+$data_ultima_consulta = $_POST["data_ultima_consulta"];
+$sql = "update t_cliente set nome = '$nome', cidade = '$cidade', estado = '$estado', peso = '$peso', altura = '$altura', data_nascimento = '$data_nascimento', data_ultima_consulta = '$data_ultima_consulta' where id = '$id'";
 mysqli_query($conexao,$sql);
 mysqli_close($conexao);
 header("location: selecionar.php")

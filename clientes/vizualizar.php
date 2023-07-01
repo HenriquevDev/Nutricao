@@ -1,6 +1,5 @@
 <?php
 include "../includes/cabecalho.php";
-include "../includes/menu.php";
 include "../includes/conexao.php";
 $id = $_GET["id"];
 
@@ -42,8 +41,8 @@ endwhile;
                 <td><?php echo $estado; ?></td>
                 <td><?php echo $peso; ?></td>
                 <td><?php echo $altura; ?></td>
-                <td><?php echo $data_nascimento; ?></td>
-                <td><?php echo $data_ultima_consulta; ?></td>
+                <td><?php echo date('d/m/Y', strtotime($data_nascimento)); ?></td>
+                <td><?php echo date('d/m/Y', strtotime($data_ultima_consulta)); ?></td>
             </tr> 
         </tbody>
 
