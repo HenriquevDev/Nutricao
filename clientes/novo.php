@@ -58,7 +58,7 @@ include "../includes/cabecalho.php";
                     </div>
                     <div class="col-6 mb-2">
                         <label class="form-label">Altura</label>
-                        <input class="form-control" name="altura" type="double">
+                        <input class="form-control" name="altura" type="number">
                     </div>
                     <div class="col-3 mb-2">
                         <label class="form-label">Data de Nascimento</label>
