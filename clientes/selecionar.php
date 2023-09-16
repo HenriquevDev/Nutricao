@@ -25,7 +25,6 @@ include "../includes/conexao.php";
     $todos_os_clientes = mysqli_query($conexao, $sql);
     while ($um_cliente = mysqli_fetch_assoc($todos_os_clientes)) :
     ?>
-        <tr>
             <td class="text-center"><?php echo $um_cliente['id']; ?></td>
             <td><?php echo $um_cliente['nome'] ?></td>
             <td><?php echo $um_cliente['cidade']?></td>
@@ -35,7 +34,7 @@ include "../includes/conexao.php";
             <td><?php echo date('d/m/Y', strtotime($um_cliente['data_nascimento']))?></td>
             <td><?php echo date('d/m/Y', strtotime($um_cliente['data_ultima_consulta']))?></td>
             <td class="text-center flex-row">
-                <div class="d-flex acoes">
+                <div class="d-flex acoes ">
                 <a  href="vizualizar.php?id=<?php echo $um_cliente['id']; ?>"><button class="botao btn btn-link"><img src="../img/vizualizar.png" width="25" title="vizualizar"></button></a>
 
                 <a  href="editar.php?id=<?php echo $um_cliente['id']; ?>"><button class="botao btn btn-link"><img src="../img/editar.png" width="25" title="editar" ></button></a>
@@ -43,7 +42,6 @@ include "../includes/conexao.php";
                 <a  href="deletar.php?id=<?php echo $um_cliente['id']; ?>"><button class="botao btn btn-link"><img src="../img/excluir.png" width="25" title="excluir"></button></a>
             </div>
         </td>
-        </tr>
     <?php
     endwhile;
     ?>
